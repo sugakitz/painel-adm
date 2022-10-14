@@ -22,47 +22,44 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Adicionar produtos</title>
+    <title>Adicionar medicamento</title>
 </head>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 <body>
      <header class="cabecalho"> 
        <img class="cabecalho-imagem" src="image/logovr_colorido.png">
          <nav class="cebecalho-menu">
-            <a class="cabecalho-pag" href="index-adm.php">Página Inicial</a>
+            <a class="cabecalho-pag" href="add-categorias.html">Categorias</a>
          </nav>
      </header>
      <div class="linha"></div>
        
      <div id="adicionar-container">
-        <h1 class="">Adicionar produtos: Medicamentos </h1>
-         <form action="add-produtos-adm.php" method="POST">
+        <h1 class="">Adicionar medicamento </h1>
+         <form action="add-medicamentos.php" method="POST">
 
             <label for="nome">Nome</label>
-              <input type="name" name="nome" id="nome" placeholder="Digite o nome do produto" autocomplete="off" required>
+              <input type="text" name="nome" id="nome" placeholder="Digite o nome do produto" autocomplete="off" required>
 
             <label for="Validade">Validade</label>
                <input type="date" for="validade" name="validade" id="validade" placeholder="Digite a validade do produto" required>
 
             <label for="fabricacao">Fabricacao</label>
                <input type="date" for="fabricacao" name="fabricacao" id="fabricacao" placeholder="Digite a fabricacao do produto" required>
-          
+        
             <label for="apresentacao">Apresentacao</label>
-                <input for="apresentacao" name="apresentacao" id="apresentacao" placeholder="Digite a presentacao do produto">
+                <input type="text" for="apresentacao" name="apresentacao" id="apresentacao" placeholder="Digite a presentacao do produto" required>
 
             <label for="composicao">Composicao</label>
-                <input for="composicao" name="composicao" id="composicao" placeholder="Digite a composicao do produto">
+                <input type="text" for="composicao" name="composicao" id="composicao" placeholder="Digite a composicao do produto" required>
 
             <label for="categoria">Categoria</label>
-                <input for="categoria" name="categoria" id="categoria" placeholder="Digite a categoria do produto">
-
-           <label for="indicacao">Indicacao</label>
-               <input for="indicacao" name="indicacao" id="indicacao" placeholder="Digite a indicacao do produto" required>
-
+                <input type="text" for="categoria" name="categoria" id="categoria" placeholder="Digite a categoria do produto" required>
+              
            <label for="preco">Preco</label>
-                <input for="preco" name="preco" id="preco" placeholder="Digite o preco do produto">
+               <input type="text" for="preco" name="preco" id="preco" placeholder="Digite o valor do produto" required>
 
-           <input type="submit" name="btnadicionar" value="Adicionar">
+            <input type="submit" name="btnadicionar" value="Adicionar">
            
          </form>
     </div>
@@ -71,7 +68,8 @@
      <br>
      <br>
     <footer class="rodape">
-    </footer>
+    </footer> 
+
 
 
  <style type="text/css">
@@ -127,7 +125,7 @@ a:hover {
 }
 
 /* Chrome/Opera/Safari */
-::-webkit-input-placeholder {
+::-webkit-input-placeholder { /*deixa o escrito do placeholder preto */
   color: black;
 }
 
@@ -230,3 +228,6 @@ height: 45px;
 
  </style>
 
+
+
+           
