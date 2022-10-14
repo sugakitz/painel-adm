@@ -1,0 +1,135 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta charset="UTF-8"/>
+    <title>Categorias</title>
+</head>
+   <!--<main>-->
+   <body>
+    <header class="cabecalho"> 
+        <img class="cabecalho-imagem" src="image/logovr_colorido.png">
+          <nav class="cebecalho-menu">
+             <a class="cabecalho-pag" href="index-adm.php">Página Inicial</a>
+          </nav>
+      </header>
+      <div class="linha"></div>
+       <br>
+       <br>
+       <br>
+       <br>
+     <div class="imagens-produtos">	
+   
+     <div class="efeito-imagem">
+     <center>
+        <A HREF="add-perfumaria.php" class="efeito-imagem">
+        <img src="image/cosmeticos.png" alt="logo" height="100" width="100">
+         <p>Perfumaria</p></A>
+     </center>
+    </div>
+   
+    <div class="efeito-imagem">
+    <center>
+       <A HREF="add-higiene.php" class="efeito-imagem">
+       <img src="image/facial-foam.png" alt="logo" height="100" width="100">
+       <p>Higiene Pessoal</p></A>
+    </div>
+    </center>
+   
+    <div class="efeito-imagem">
+    <center>
+       <A HREF="add-medicamentos.php" class="efeito-imagem">
+       <img src="image/remedio.png" alt="logo" height="100" width="100">
+       <p>Medicamentos</p></A>
+    </center>
+    </div>
+   
+	</body>
+       <!--
+     <footer class="rodape">
+     </footer>
+       -->
+
+</html>
+
+ <style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/*body{
+	background-color:white ;
+}*/
+*{
+    margin:0;
+    padding:0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color:black;
+    border:none;
+}
+
+body {
+    font-size: 100%;
+    background-color: #DCDCDC;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+ 
+.cabecalho-imagem {
+    height: 72px;
+}
+
+.cabecalho-pag{
+    color: rgb(4, 73, 25);
+    /* font-weight: 400; */
+    font-size: 18px;
+}
+
+a:hover {
+    color:#3CB371; /*página inicial fica dessa cor*/
+}
+
+.linha{
+    border-top: 0.4px solid rgb(4, 73, 25); /* linha */
+    padding-top: 1px;
+    color: white;
+  /*margin-bottom: 16px;*/
+}
+
+/*as imagens ao todo em relação a página*/
+.imagens-produtos{
+	/*position:relative;*/
+	/*margin-top:px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+	/*z-index:10;*/
+}
+
+/*espaçamento entre as imagens e edições*/
+.efeito-imagem{
+	padding-right: 45px;
+	font-size: 12px;
+	color:#3F4444;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.efeito-imagem:hover{
+ filter:drop-shadow(3px 3px 3px #015f40);
+ color:#015f40;
+}
+
+/* .rodape{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 0.4px solid rgb(4, 73, 25); --> linha
+    padding: 24px;
+} */
+
+</style>
