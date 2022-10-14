@@ -10,7 +10,7 @@
    
    <div class="efeito-imagem">
    <center>
-   <A HREF="add-prod-adm.php" class="efeito-imagem">
+   <A HREF="add-categorias.html" class="efeito-imagem">
    <img src="image/adicionar.png"alt="logo" height="100" width="100">
    <p>Adicionar produto</p></A>
    </center>
